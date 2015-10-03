@@ -1,0 +1,1044 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+ caption, tbody, tfoot, thead, tr, th, td {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+ background: transparent;
+}
+body {
+ line-height: 1;
+ background:url(../image/patterns/pat_20040703154623.gif) repeat;
+}
+ol, ul {
+ list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+ border-collapse: collapse;
+}
+a{text-decoration:none;}
+
+/*body
+{
+	background-repeat:repeat;
+	background-image:url(images/pat_20060925141257.gif);
+}
+*/
+img
+{
+	border:none;
+}
+
+.clearfloat{
+	clear:both;
+}
+
+.button
+{
+	background-image:url(../image/buttonback.png);
+	background-repeat:repeat-x;
+	border:none;
+	font:bold 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#333;
+}
+
+
+
+.wrap
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:870px;
+	height:auto;
+	position:relative;
+	background-color:#fff;
+	box-shadow:0px 2px 5px #999;
+}
+
+
+/*===============LAYOUT===============*/
+
+.header
+{
+	width:889px;
+	height:50px;
+	position:relative;
+	background-image:url(images/header2.png);
+	background-repeat:repeat-x;
+	border-bottom:1px solid #999;
+	margin-left:-10px;
+	z-index:2;
+
+}
+
+.navbar
+{
+	width:100%;
+	height:30px;
+	position:relative;
+	background-color: #CCCCCC;
+	background-image: url(images/headnav.png);
+	background-repeat:repeat-x;
+	border-top:1px solid #FFF;
+}
+
+.leftnav
+{
+	width:150px;
+	height:auto;
+	position:relative;
+	float:left;
+	border-right:1px solid #ccc;
+}
+
+.content
+{
+	width:550px;
+	height:auto;
+	position:relative;
+	margin:5px 5px;
+	float:left;
+}
+
+.adsection
+{
+	width:150px;
+	height:500px;
+	position:relative;
+	border-left:1px solid #CCC;
+	margin-top:5px;
+	float:left;
+	margin-bottom:10px;
+}
+
+
+.footer
+{
+	width:100%;
+	height:113px;
+	background-image:url(images/stripe_07e724f75f63978c6dcbbe00cfb40424.png);
+	background-repeat:repeat;
+	position:relative;
+	clear:both;
+	border-top:1px #E7E787 solid;
+}
+
+
+/*===============HEADER===============*/
+
+.header .logo
+{
+	position:absolute;
+	left:20px;
+	font:bold 22px Cambria;
+	color:#FFF;
+	line-height:50px;
+	text-shadow:1px 2px 5px .999;
+}
+
+.header ul
+{
+	width:auto;
+	height:50px;
+	list-style:none;
+	position:absolute;
+	right:10px;
+	bottom:0px;
+}
+
+.header ul li
+{
+	display:inline;
+}
+
+.header ul li a
+{
+	font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#333;
+	position:relative;
+	padding:0px 8px;
+	line-height:50px;
+}
+
+.banner .leftcorner
+{
+	position:absolute;
+	left:-9px;
+	top:0px;
+	background-image:url(images/leftcorner.png);
+	background-repeat:no-repeat;
+	width:10px;
+	height:10px;
+}
+
+.banner .rightcorner
+{
+	position:absolute;
+	right:-9px;
+	top:0px;
+	background-image:url(images/rightcorner.png);
+	background-repeat:no-repeat;
+	width:9px;
+	height:9px;
+}
+
+
+.banner
+{
+	width:100%;
+	height:150px;
+	position:relative;
+}
+
+.banner .search
+{
+	width:200px;
+	height:150px;
+	position:relative;
+	float:left;
+	background-color:#E6E6E6;
+}
+
+/*--------------SearhBox--------------*/
+
+.search_form ul
+{
+	list-style:none;
+	margin-left:10px;
+}
+
+.search_form ul li
+{
+	padding:10px 0px 0px 5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.search_form ul li label
+{
+	width:100%;
+	display:block;
+	line-height:20px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.search_form ul li select
+{
+	display:block;
+	width:150px;
+}
+
+.search_form ul li input
+{
+	width:150px;
+}
+
+.search_form ul li .button
+{
+	width:70px;
+}
+
+.search_form ul li .advanced
+{
+	position:relative;
+	padding-left:10px;
+	text-decoration:underline;
+}
+
+
+.navbar .loginlist
+{
+	position:relative;
+	margin-left:20px;
+}
+.navbar .loginlist li
+{
+	display:inline;
+}
+
+.navbar .loginlist li a
+{
+	padding:0px 16px 0px 0px;
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:30px;
+	color:#333;
+}
+
+.navbar .loginlist a:hover
+{
+	color:#03F;
+	background-image:url(images/toggle_up_dark.png);
+	background-repeat:no-repeat;
+	background-position:100% 50%;
+
+}
+
+/*===============LEFTNAV===============*/
+
+
+.leftnav .category
+{
+	width:150px;
+	height:auto;
+	border-left:none;
+	position:relative;
+	margin-top:5px;
+}
+
+.leftnav .leftnavheader
+{
+	width:135px;
+	height:40px;
+	position:relative;
+	font:bold 14px Verdana, Geneva, sans-serif;
+	line-height:40px;
+	padding-left:15px;
+	color:#333;
+	border-bottom:1px solid #CCC;
+	vertical-align:bottom;
+}
+
+.leftnav .leftnavlist
+{
+	list-style:none;
+}
+
+
+.leftnav ul.leftnavlist li a
+{
+	font:12px Georgia, "Times New Roman", Times, serif;
+	line-height:30px;
+	color:#333333;
+	padding:0px 15px;
+	display:block;
+	border-bottom:dashed 1px #E8E8E8;
+}
+
+.leftnav ul.leftnavlist li a:hover
+{
+	color:#03F;
+	background-color:#DFEFFF;
+}
+
+
+.category ul.leftnavlist li a span
+{
+	position:absolute;
+	right:5px;
+	color:#FF9900;
+}
+
+.leftnav .location
+{
+	width:100%;
+	height:auto;
+	border-left:none;
+	position:relative;
+	margin-top:5px;
+}
+
+.leftnav ul li.noborder
+{
+	border:none;
+}
+
+/*===============FOOTER===============*/
+
+.footer ul
+{
+	width:120px;
+	position:relative;
+	list-style:none;
+	float:left;
+	margin:15px 0px 0px 50px;
+}
+
+.footer ul li a
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	line-height:22px;
+	color:#666;
+	display:block;
+}
+
+.footer ul li a:hover
+{
+	text-decoration:underline;
+	color:#06F;
+}
+
+.footer .second_column
+{
+	position:relative;
+	float:left;
+}
+
+.footer p
+{
+	position:absolute;
+	top:15px;
+	right:200px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	color:#999;
+	width:150px;
+	line-height:22px;
+}
+
+.footer p a
+{
+	color:#FF9900;
+	display:block;
+}
+
+.footer p a:hover
+{
+	color:#FF6600;
+	font-weight:300;
+}
+
+.footer .socialcon
+{
+	position:absolute;
+	right:10px;
+	top:15px;
+}
+
+.footer .socialcon img
+{
+	width:32px;
+	height:32px;
+	border:none;
+}
+
+
+
+
+/*============================== CSS Document for LOCATION PAGE 2===================================*/
+
+.content .location
+{
+	padding:5px 5px;
+	color:#333;
+	font-family:"Lucclassa Sans Unicode", "Lucclassa Grande", sans-serif;
+	font-size:14px;
+	background-color:#D2D16B;
+}
+
+.rest_list
+{
+	list-style:none;
+}
+
+.rest_list li
+{
+	display:block;
+	border-bottom:1px solid #CCC;
+}
+
+.rest_list li a
+{
+	display:block;
+	color:#996;
+	padding:10px 20px;
+
+}
+
+.rest_list li a:hover
+{
+	background-color:#F7F7D5;
+	color:#9C0;
+}
+
+.rest_list .address
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#999;
+	padding:none;
+}
+
+.rest_list .review
+{
+	padding:0px 5px;
+	color:#666;
+	font-size:12px;
+}
+
+/*===============CONTENT===============*/
+
+.profile .shoplogo
+{
+	position:relative;
+	float:left;
+	width:150px;
+}
+
+.profile p
+{
+	font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:19px;
+	width:380px;
+	left:10px;
+	top:10px;
+	float:left;
+	margin-bottom:20px;
+	position:relative;
+}
+
+.sumrating
+{
+	position:relative;
+	margin-left:160px;
+}
+
+.sumrating span
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#FF9900;
+}
+
+/*=====Rating Table=====*/
+
+.rating
+{
+	width:550px;
+	height:auto;
+	position:relative;
+	margin-top:10px;
+}
+
+.first_row
+{
+	width:100%;
+	height:30px;
+	background-color:#FFCD82;
+	position:relative;
+}
+
+.first_row h4
+{
+	line-height:30px;
+	margin-left:25px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.first_row span
+{
+	position:absolute;
+	top:0px;
+	left:125px;
+	line-height:30px;
+	color:#999;
+	font-size:14px;
+}
+
+.details
+{
+	width:100%;
+	height:30px;
+	background-color:#FFF3E1;
+
+}
+
+.details div
+{
+	position:relative;
+	float:left;
+	padding:0px 25px;
+}
+
+.details p
+{
+	line-height:30px;
+	float:left;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+.rating .reviewbutton
+{
+	position:absolute;
+	right:5px;
+	top:4px;
+	width:125px;
+	height:22px;
+	background-image:url(images/reviewbutton.png);
+	background-repeat:no-repeat;
+}
+
+/*=====content navigation=====*/
+
+.shopnav
+{
+	width:550px;
+	position:relative;
+	list-style:none;
+	background-color:#E6F0F1;
+	float:left;
+	margin-top:20px;
+	overflow:hidden;
+}
+
+.shopnav li a
+{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#333;
+	position:relative;
+	float:left;
+	width:137px;
+	text-align:center;
+	line-height:30px;
+	display:block;
+}
+
+.shopnav li a:hover
+{
+	color:#666;
+	background-color:#CCE1E3;
+}
+
+.currentpage
+{
+	background-image:url(images/shopnavback.jpg);
+	background-repeat:repeat-y;
+	border-right:1px solid #BCCFD0;
+
+}
+
+.comment
+{
+	position:absolute;
+	right:0px;
+	width:385px;
+	height:510px;
+	background-color:#E8F3A7;
+	z-index:1;
+	border-right:1px solid .ccc;
+	border-radius:5px;
+	border-top-right-radius:0px;
+	box-shadow:-1px 2px 3px #666;
+}
+
+
+/*===============--------------CSS FOR GALLERY------------------------===============*/
+
+.gallery
+{
+	width:100%;
+	position:relative;
+}
+
+.gallery .mainphoto
+{
+	width:450px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	margin-top:40px;
+	padding:8px 8px 0px 8px;
+	border:1px #CCC solid;
+}
+
+.gallery .mainphoto p
+{
+	padding:5px 5px;
+	text-align:right;
+	font-family:Tahoma, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.mainphoto span
+{
+	font-size:10px;
+	color:#999;
+}
+
+.mainphoto em
+{
+	font-size:10px;
+	font-weight:bold;
+	color:#666;
+}
+
+.mainphoto a:hover
+{
+	background-image:url(images/addphotoscombined.jpg);
+	background-position:-30px;
+	background-repeat:repeat-x;
+}
+
+
+.addphoto
+{
+	position:absolute;
+	right:1px;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	border-top:1px solid #CCC;
+	padding:5px 10px;
+	top:-31px;
+	text-decoration:none;
+	background-image:url(images/addphotoscombined.jpg);
+	background-repeat:repeat-x;
+	color:#333;
+}
+
+
+.gallery .thumbnail
+{
+	list-style:none;
+	width:430px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	margin-bottom:20px;
+	border-top:1px dashed #999;
+	padding-top:10px;
+}
+
+.gallery .thumbnail li
+{
+	position:relative;
+	float:left;
+	display:inline;
+	border-top:1px #CCC solid;
+	border-left:1px #CCC solid;
+	border-right:1px #F0F0F0 solid;
+	border-bottom:1px #F0F0F0 solid;
+	margin:2px 2px;
+}
+
+
+
+/*===============-----------------CSS FOR ADDRESS PAGE -----------------===============*/
+.adrs
+{
+	padding:10px 10px;
+	font-weight:bold;
+}
+
+.direction
+{
+	padding:10px 10px;
+	width:300px;
+	text-align:justify;
+}
+
+.kfcmap
+{
+	position:relative;
+	width:200px;
+	height:300px;
+	float:right;
+	padding:10px 10px;
+	border:1px solid #06F;
+}
+
+
+
+/*===============--------------------CSS FOR MENU--------------------------===============*/
+
+.menu
+{
+	width:550px;
+	margin-top:10px;
+	position:relative;
+	border:1px solid #ccc;
+}
+
+.menu thead
+{
+	background-color:#B4D332;
+}
+
+.menu th
+{
+	padding:5px 0px;
+	font:bold 12px Verdana, Geneva, sans-serif;
+}
+
+.menu tbody th
+{
+	background-color:#E6F0F1;
+	font:bold 12px Verdana, Geneva, sans-serif;
+	color:#333;
+	border-top:1px solid #FFF;
+}
+
+.menu td
+{
+	padding:10px 0px;
+	text-align:center;
+	font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-top:1px solid #CCC;
+}
+
+.menu .item
+{
+	text-align:left;
+	padding:10px 10px;
+	font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.menu .item span
+{
+	font:10px Verdana, Geneva, sans-serif;
+	color:#999999;
+}
+
+.menu tr.alt td 
+{
+	background:#F6F6F6;
+}
+
+.menu tr.over td {
+	background: #EEF5D1;
+}
+
+
+
+
+/*=====--------------------CSS FOR Review Area--------------------------=====*/
+
+.reviewarea
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	margin-top:10px;
+}
+
+.box
+{
+	position:relative;
+	padding:10px 15px;
+	border-bottom:dashed 1px #999;
+}
+
+.box p
+{
+	padding:5px 0px;
+}
+
+.box .bywho
+{
+	font:12px Tahoma, Geneva, sans-serif;
+	color:#999999;
+}
+
+.box .bywho .user_name
+{
+	font-weight:bold;
+	color:#819510;
+}
+
+.box h3
+{
+	font:bold 14px Geneva, Verdana, sans-serif;
+	float:left;
+}
+
+.box img
+{
+	float:left;
+	padding-left:15px;
+}
+
+
+.box .review
+{
+	font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:18px;
+	width:450px;
+
+}
+
+.box .musteat
+{
+	font:italic 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/*=====--------------------CSS FOR Comment Page--------------------------=====*/
+
+.content .comment_page
+{
+	position:relatve;
+	width:400px;
+	height:410px;
+	background-color:#E8F3A7;
+	border-right:1px solid #ccc;
+	border-radius:5px;
+	margin-top:5px;
+	box-shadow:1px 2px 3px #666;
+}
+
+.comment_popup
+{
+	position:absolute;
+	right:0px;
+	top:30px;
+	width:400px;
+	height:auto;
+	background-color:#E8F3A7;
+	border-right:1px solid #ccc;
+	border-radius:5px;
+	margin-top:5px;
+	box-shadow:1px 2px 3px #666;
+	z-index:2;
+	display:none;
+}
+
+.giverating
+{
+	margin-left:20px;
+}
+
+.giverating th
+{
+	border:none;
+	border-bottom:1px solid #333;
+	text-align:left;
+	padding:5px 0px;
+	font:bold 12px Verdana, Geneva, sans-serif;
+}
+
+.giverating th[scope=row]
+{
+	border-bottom:1px solid #CCC;
+	padding:10px 20px 5px 0px;
+}
+
+.giverating td
+{
+	border:none;
+	border-bottom:1px solid #ccc;
+	width:100px;
+	text-align:right;
+}
+
+.comment_popup ul
+{
+	position:relative;
+	margin:20px;	
+}
+
+.comment_form li
+{
+	display:block;
+	margin-top:10px;
+	font:bold 12px Verdana, Geneva, sans-serif;
+}
+
+.comment_form li a
+{
+	font:normal 10px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#666;
+	padding-left:5px;
+}
+
+.comment_form label
+{
+	display:block;
+	text-align:left;
+}
+
+.comment_form input
+{
+	border:none;
+	border-top:1px solid #999;
+	width:350px;
+}
+
+.comment_form textarea
+{
+	width:350px;
+	height:120px;
+	border:none;
+	border-top:1px solid #999;
+
+}
+
+.comment_form input[type=submit]
+{
+	padding:5px;
+	width:80px;
+	border:none;
+}
+
+.imp {color:#F30}
+
+/*===============CSS for LoginBox===============*/
+
+.logform
+{
+	position:absolute;
+	width:auto;
+	left:5px;
+	background-color:#E8F3A7;
+	z-index:1;
+	display:none;
+	box-shadow:2px 2px 2px #999;
+}
+
+.navbar .loginform li
+{
+	margin:10px 10px;
+}
+
+
+.navbar label
+{
+	display:block;
+	text-align:left;
+	font:14px Cambria;
+}
+
+
+.navbar .logbutton
+{
+	width:80px;
+	height:25px;
+}
+
+.navbar .logform a
+{
+	font:12px Cambria;
+	text-decoration:underline;
+	padding:0px;
+}
+
+
+.navbar .loginform .remember_me
+{
+	display:inline;
+	font-size:12px;
+	padding-left:5px;
+}
+
+.navbar .regform
+{
+	position:absolute;
+	left:60px;
+	background-color:#E8F3A7;
+	z-index:1;
+	border-radius:5px;
+	box-shadow:-1px 2px 3px .666;
+	display:none;
+}
+

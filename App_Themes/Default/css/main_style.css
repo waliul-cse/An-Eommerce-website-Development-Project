@@ -1,0 +1,49 @@
+﻿*{ margin:0; padding:0px;}
+
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+/***************************************
+		Menu styles
+***************************************/
+
+.sf-menu a, .sf-menu a:visited
+{
+	color:#ebebeb;
+}
+
+.sf-menu li {
+	background:		#515151;
+}
+.sf-menu li li {
+	background:		#4f4f4f;
+}
+.sf-menu li li li {
+	background:		#434444;
+}
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	background:		#252525;
+	outline:		0;
+}
+
+.current
+{
+	background-color:#9F9F9F;
+}
+
+/***************************************
+		Page common styles
+***************************************/
+.row
+{
+	clear:left;
+}
+
+.col
+{
+	float:left;
+}

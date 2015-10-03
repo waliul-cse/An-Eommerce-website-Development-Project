@@ -1,0 +1,7 @@
+﻿<asp:GridView SkinID="DefaultGrid" runat="server" GridLines="Both" 
+BorderColor="#6f6f6f" BorderStyle="Solid" BorderWidth="1px" Width="100%" 
+HorizontalAlign="Center" Style="margin:auto; " >
+<RowStyle CssClass="grid_row"/>
+<AlternatingRowStyle BackColor="#e8e8e8" />
+<HeaderStyle CssClass="grid_header" />
+</asp:GridView>

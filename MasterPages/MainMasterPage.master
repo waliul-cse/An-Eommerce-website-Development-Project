@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs"
+    Inherits="MasterPages_MainMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Style/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="PageWrapper">
+        <table class="page" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td>
+                    <div class="Header">
+                        <table class="LogoTable" border="0">
+                            <tr>
+                                <td valign="top" width="28%">
+                                    <img src="Images/Logo.jpg" height="50" width="110" />
+                                    <div class="divLogo">
+                                    </div>
+                                </td>
+                                <td valign="bottom">
+                                    <div class="menu">
+                                        <ul>
+                                            <li><a href="Default.aspx">home</a></li>
+                                            <li><span class="borders"></span></li>
+                                            <li><a href="onlineadd.aspx">online addmission</a></li>
+                                            <li><span class="borders"></span></li>
+                                            <li>
+                                                <asp:HyperLink ID="HyperLink2" NavigateUrl="~/faq.aspx" runat="server">faq</asp:HyperLink></li>
+                                            <li><span class="borders"></span></li>
+                                            <li><a href="#">about</a></li>
+                                            <li><span class="borders"></span></li>
+                                            <li><a href="http://mail.laurelsourcing.com">Webmail</a></li>
+                                            <li><span class="borders"></span></li>
+                                            <li>
+                                                <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Contact.aspx" runat="server">contact</asp:HyperLink></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%" cellpadding="O" cellspacing="0">
+                        <tr>
+                            <td class="Sidebar" valign="top" width="25%">
+                                <div class="divSidebar">
+                                    <div class="divCatagory">
+                                        <div style="color: Yellow">
+                                            catagories
+                                        </div>
+                                        <div style="color: black; padding-top: 25px;">
+                                        </div>
+                                        <asp:Repeater ID="rptMenu" runat="server" OnItemDataBound="rptMenu_ItemDataBound">
+                                            <ItemTemplate>
+                                                <div style="color: black;">
+                                                    <asp:Label ID="lblCatagory" runat="server" Visible="false" Text='<%# Eval("CatagoryID")%>'></asp:Label>
+                                                    <asp:HyperLink class="sideBarMenu" ID="hplMenu" runat="server"><%# Eval("CatagoryName")%></asp:HyperLink>
+                                                </div>
+                                                <div style="width: 140px">
+                                                    <hr />
+                                                </div>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                    </div>
+                                </div>
+                            </td>
+                            <td valign="top" class="Main">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr id="footer">
+                <td>
+                    <div class="divfooter">
+                        <div class="footermenu" style="float: left; margin-left: 20px">
+                            <ul style="margin-top: 0px;">
+                                <li><span>Copyright</span></li>
+                                <li><a class="limargin" href="#">home</a></li>
+                                <li><span>-</span></li>
+                                <li><a href="#">products</a></li>
+                                <li><span>-</span></li>
+                                <li><a href="#">faq</a></li>
+                                <li><span>-</span></li>
+                                <li><a href="#">about</a></li>
+                                <li><span>-</span></li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
