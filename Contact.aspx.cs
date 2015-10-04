@@ -31,7 +31,7 @@ public partial class Contact : System.Web.UI.Page
             myMessage.Body = mailBody;
 
             myMessage.From = new MailAddress("librarymanageme@librarymanagementsystem.co.cc", "website");
-            myMessage.To.Add(new MailAddress("amir@ahmed.com", "Amir Ahmed"));
+            myMessage.To.Add(new MailAddress("waliul@ahmed.com", "waliul Ahmed"));
 
            // myMessage.To.Add(new MailAddress("mobasshirice@gmail.com", "mobasshir Ahmad"));
 
